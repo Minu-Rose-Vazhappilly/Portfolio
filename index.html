@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minu Rose Vazhappilly</title>
+    <!-- to link with css style sheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- to add favicon -->
+    <link rel="icon" type="image/x-icon" href="./MINU_PASSPORTPHOTO.jpg">
+    <!-- cdn link to deliver content.copy by font awesome cdn .->library->first linke -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- cdn of google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- aos -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-black" style="height:100vh;">
+    <video muted autoplay loop playsinline style="position:fixed;height:100%;width:100%;object-fit:cover;z-index: -1;">
+        <source src="./video/skillsbgvideo.mp4" type="video/mp4">
+    </video>
+    <nav class="bg-gray-800" style="text-decoration: none;">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button" aria-controls="mobile-menu" aria-expanded="false"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <!--
+            Icon when menu is closed.
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                            aria-hidden="true" class="block size-6">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <!--
+            Icon when menu is open.
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                            aria-hidden="true" class="hidden size-6">
+                            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex shrink-0 items-center">
+
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a href="#about" aria-current="page"
+                                class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" style="text-decoration: none;">About</a>
+                            <a href="#skills"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" style="text-decoration: none;">Skills</a>
+                            <a href="#education"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" style="text-decoration: none;">Education</a>
+                            <a href="#projects"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" style="text-decoration: none;">Project</a>
+                            <a href="#contact"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" style="text-decoration: none;">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <!-- <button type="button"
+                        class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
+                        <span class="absolute -inset-1.5"></span>
+                        <span class="sr-only">View notifications</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                            aria-hidden="true" class="size-6">
+                            <path
+                                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button> -->
+
+                    <!-- Profile dropdown -->
+                    <div class="relative ml-3">
+                        <div>
+                            <button id="user-menu-button" type="button" aria-expanded="false" aria-haspopup="true"
+                                class="relative flex rounded-full bg-gray-800 text-sm focus:outline-hidden focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-800">
+                                <span class="absolute -inset-1.5"></span>
+                                <span class="sr-only">Open user menu</span>
+                                <!-- <img src="./MINU_PASSPORTPHOTO.jpg" alt="" class="size-8 rounded-full" /> -->
+                                 <a href="./Minu_CV.pdf" download
+   class="px-4 py-2 text-sm text-white border border-cyan-400 rounded-lg relative overflow-hidden transition duration-300 hover:bg-cyan-400 hover:text-black shadow-[0_0_10px_#00ffff]">
+  Download CV
+</a>
+
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div id="mobile-menu" class="sm:hidden">
+            <div class="space-y-1 px-2 pt-2 pb-3">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#about" aria-current="page"
+                    class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" style="text-decoration: none;">About</a>
+                <a href="#skills"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" style="text-decoration: none;">Skills</a>
+                <a href="#education"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" style="text-decoration: none;">Education</a>
+                <a href="#projects"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" style="text-decoration: none;">Projects</a>
+                <a href="#contact"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white" style="text-decoration: none;">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="about" data-aos="fade-left" class="d-flex flex-column flex-lg-row align-items-center border border-white neon-outer position-relative p-4"
+        style="border-top-left-radius: 120px;
+            border-bottom-left-radius: 120px;
+            width: 80%;
+            margin: 100px auto;
+            background-color: black;">
+
+        <!-- Image Section -->
+        <div class="image-section-responsive bg-white rounded-circle overflow-hidden neon-inner flex-shrink-0"
+            style="width: 300px; height: 300px;">
+            <img src="./MINU_ROSE-removebg-preview.png" alt="Minu Rose"
+                style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+
+        <!-- Text Section -->
+        <div class="ms-4" style="text-align: justify; color: white;">
+            <h3 class="text-end">MEARN STACK DEVELOPER</h3>
+            <p>
+                I'm a passionate MEARN Stack Developer with a strong foundation in front-end development and a
+                background in QA for medical devices. I enjoy building responsive, user-friendly web interfaces using
+                technologies like HTML, CSS, JavaScript, Bootstrap, and Tailwind.
+                <br><br>
+                With experience in real-world projects like travel and restaurant websites, I'm eager to innovate and
+                contribute to impactful tech solutions. Currently enhancing my full-stack skills and ready to take on
+                new challenges in web development.
+            </p>
+        </div>
+    </div>
+
+    <div id="skills"  style="height: 60vh;">
+
+        <div data-aos="zoom-in"  >
+            <h2  class="text-center mt-5">Skills</h2>
+            <div class="container-fluid">
+                <div class="row g-4 p-5">
+                    <div class="col-3 col-md-2">
+                        <div class="rounded-circle bg-white overflow-hidden" style="width: 100px;height: 100px;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/640px-Python_logo_01.svg.png"
+                                alt="No image" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <div class="rounded-circle bg-white" style="width: 100px;height: 100px;">
+                            <img src="https://www.php.net/images/meta-image.png" alt="No image"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <div class="rounded-circle bg-white d-flex justify-content-center align-items-center"
+                            style="width: 100px;height: 100px;">
+                            <img src="https://logospng.org/download/html-5/logo-html-5-768.png" alt="No image"
+                                style="width: 80%; height: 80%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <div class="rounded-circle bg-white d-flex justify-content-center align-items-center"
+                            style="width: 100px;height: 100px;">
+                            <img src="https://logospng.org/download/css-3/logo-css-3-2048.png" alt="No image"
+                                style="width: 80%; height: 80%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <div class="rounded-circle bg-white d-flex justify-content-center align-items-center"
+                            style="width: 100px;height: 100px;">
+                            <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Emblem.png"
+                                alt="No image" style="width: 70%; height: 70%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <div class="rounded-circle bg-white d-flex justify-content-center align-items-center"
+                            style="width: 100px;height: 100px;">
+                            <img src="https://www.kindpng.com/picc/m/403-4039227_c-language-logo-png-transparent-png.png"
+                                alt="No image" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <div class="rounded-circle bg-white d-flex justify-content-center align-items-center"
+                            style="width: 100px;height: 100px;">
+                            <img src="https://blog.usize-tech.com/contents/uploads/2022/05/eyecatch-sqlserver.png"
+                                alt="No image" style="width: 70%; height: 70%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <div class="rounded-circle bg-white d-flex justify-content-center align-items-center"
+                            style="width: 100px;height: 100px;">
+                            <img src="https://static.vecteezy.com/system/resources/previews/022/100/214/original/java-logo-transparent-free-png.png"
+                                alt="No image" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <div class="rounded-circle bg-white d-flex justify-content-center align-items-center"
+                            style="width: 100px;height: 100px;">
+                            <img src="https://logospng.org/download/bootstrap/bootstrap-1536.png" alt="No image"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <div class="rounded-circle bg-white d-flex justify-content-center align-items-center"
+                            style="width: 100px;height: 100px;">
+                            <img src="https://images.seeklogo.com/logo-png/35/1/tailwind-css-logo-png_seeklogo-354675.png"
+                                alt="No image" style="width: 70%; height: 70%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <div class="rounded-circle bg-white d-flex justify-content-center align-items-center"
+                            style="width: 100px;height: 100px;">
+                            <img src="https://www.pngall.com/wp-content/uploads/13/Github-Logo.png" alt="No image"
+                                style="width: 80%; height: 80%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-2">
+                        <div class="rounded-circle bg-white d-flex justify-content-center align-items-center"
+                            style="width: 100px;height: 100px;">
+                            <img src="https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png"
+                                alt="No image" style="width: 70%; height: 70%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5" id="education" data-aos="zoom-in">
+        <h2 class="text-center mt-5">Education</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-center justify-content-center flex-column">
+                    <img src="./Screenshot_2025-07-21_131126-removebg-preview.png" alt="">
+                </div>
+                <div class="col-md-8 d-flex align-items-center justify-content-center flex-column">
+                    <div class="bg-black neon-outer p-4 border rounded mt-2 mb-3 mt-5" style="max-width: 600px; margin: auto;">
+                        <ul class="ml-5 p-4">
+                            <li type="Disc" style="font-size:23px">Rajagiri College Of Social Sciences 30/03/2025<br>
+                                : Master of Computer Application</li>
+                            <li type="Disc" style="font-size:23px">
+                                Little Flower College, Guruvayoor, 30/03/2023 <br>
+                                : Bachelor of Mathematics
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="projects" data-aos="zoom-in">
+        <h3 class="text-center mt-5">Projects</h3>
+        <div class="mt-5 p-4 container-fluid">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card" style="width: 330px;">
+                        <img src="./desgo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">DesGo(front-end using Bootstrap)</h5>
+                            <p class="card-text text-black"></p>
+                            <a href="https://minu-rose-vazhappilly.github.io/Travel-Website/" class="btn btn-primary">Go
+                                Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 300px;">
+                        <img src="./Movie.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Movie Ticket Booking(front-end using Tailwind)</h5>
+                            <p class="card-text text-black"></p>
+                            <a href="https://minu-rose-vazhappilly.github.io/Film-Ticket-Booking-Frontend/"
+                                class="btn btn-primary">Go Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 330px">
+                        <img src="./cakeverse.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cakeverse(front-end using HTML & CSS)</h5>
+                            <p class="card-text text-black"></p>
+                            <a href="https://cakeverse.netlify.app/" class="btn btn-primary">Go Live</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="contact" class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">About Me</h5>
+                    <p class="small">
+                        I'm a passionate full-stack developer dedicated to building responsive and engaging websites.
+                        Let’s connect!
+                    </p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+                        <li><a href="#education" class="text-white text-decoration-none">Education</a></li>
+                        <li><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-uppercase">Contact</h5>
+                    <p class="small mb-1"><i class="bi bi-envelope"></i> minurosevazhappilly@gmail.com</p>
+                    <p class="small mb-1"><i class="bi bi-phone"></i> +91 6282693587</p>
+                    <div class="mt-2">
+                        <a href="https://www.linkedin.com/in/minu-rose-vazhappilly/" class="text-white me-3"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Minu-Rose-Vazhappilly/" class="text-white me-3"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/minu_rose_vazhappilly/" class="text-white"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary" />
+            <div class="text-center small">
+                © 2025 Minu Rose. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+
+</html>
