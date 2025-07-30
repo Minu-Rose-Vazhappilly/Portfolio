@@ -26,7 +26,7 @@
 </head>
 
 <body style="padding-top: 10px;">
-    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100" style="background-color: #D6EAF8;z-index: 999;">
+    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100" style="background-color: #D6EAF8;z-index: 1;">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@
         </div>
     </nav>
     <div id="home" class="container-fluid position-fixed"
-        style="background-color: #FADADD;width:100vw;top:0;left:0; height:100vh;z-index: -1;">
+        style="background-color: #FADADD;width:100vw;top:0;left:0; height:100vh;z-index:0">
 
         <div class="row vh-100">
             <!-- Left Column -->
@@ -81,7 +81,7 @@
                 </div>
 
                 <h3 class="mt-3 text-center" style="color: #0e4883;">MERN STACK DEVELOPER</h3>
-                <a href="./resume/template.pdf" download  class="px-4 py-2 text-sm rounded bg-white shadow"
+                <a href="./Minu.pdf" download  class="px-4 py-2 text-sm rounded bg-white shadow"
                     style="color: #0e4883; text-decoration: none; cursor: pointer;">
                     ⬇ Download CV
                 </a>
@@ -90,8 +90,8 @@
         </div>
     </div>
     <div id="about" style="background-color: #D6EAF8;margin-top:100vh;position: relative; z-index: 1;" class="mb-0">
-        <h1 class="text-center p-3" style="color:  #0e4883;">About</h1>
-        <p class="d-flex justify-content-center align-items-center p-5"
+        <h1 data-aos="zoom-in" class="text-center p-3" style="color:  #0e4883;">About</h1>
+        <p data-aos="zoom-in" class="d-flex justify-content-center align-items-center p-5"
             style="color: #0e4883;text-align: justify;font-weight:400">
             MEARN Stack Developer with a strong foundation in front-end technologies like HTML, CSS, JavaScript,
             Bootstrap, and Tailwind.
@@ -206,9 +206,9 @@
 
 
     </div>
-    <div class="p-4" id="education" style="background-color: #D6EAF8;" data-aos="zoom-in">
-        <h1 class="text-center" style="color:#0e4883">Education</h1>
-        <div class="container-fluid">
+    <div class="p-4" id="education" style="background-color: #D6EAF8;z-index:1;position: relative;">
+        <h1 data-aos="zoom-in" class="text-center" style="color:#0e4883">Education</h1>
+        <div data-aos="zoom-in" class="container-fluid">
             <div class="row">
                 <!-- Timeline Column -->
                 <div class="col-2 col-md-1 d-flex flex-column align-items-center">
@@ -243,8 +243,8 @@
         </div>
 
     </div>
-    <div style="background-color: #FADADD;color:#0e4883" id="projects" data-aos="zoom-in">
-        <h3 class="text-center p-3">Projects</h3>
+    <div style="background-color: #FADADD;color:#0e4883;z-index:1;position: relative;" id="projects">
+        <h3 data-aos="zoom-in" class="text-center p-3">Projects</h3>
         <div class="mt-5 p-4 container-fluid">
             <div class="row g-3">
                 <div class="col-md-3">
@@ -299,7 +299,7 @@
 
         </div>
     </div>
-    <footer style="background-color:#D6EAF8;" id="contact" class="py-4">
+    <div style="background-color:#D6EAF8;z-index:1;position: relative;" id="contact" class="py-4">
         <div class="container">
             <div class="row text-center text-md-start">
                 <div class="col-md-4 mb-3">
@@ -340,7 +340,7 @@
                 © 2025 Minu Rose. All rights reserved.
             </div>
         </div>
-    </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
